@@ -3,40 +3,38 @@
     <h1 style={{ color: "#00827A" }}>Book your stay</h1>
     <div class="flex flex-row items-center justify-between">
       <form class="mt-4">
-        <label for="checkin" class="block text-gray-700 text-base">Check-in Date:</label>
+        <label for="checkin" class="block text-gray-700 text-sm">Check-in Date:</label>
         <input
           type="date"
           id="checkin"
           name="checkin"
           class="mt-1 p-2 border border-gray-300 rounded w-full custom-placeholder"
-          placeholder="Select date"
         />
       </form>
 
       <form class="mt-4">
-        <label for="checkin" class="block text-gray-700 text-base">Check-in Date:</label>
+        <label for="checkout" class="block text-gray-700 text-sm">Check-out Date:</label>
         <input
           type="date"
-          id="checkin"
-          name="checkin"
+          id="checkout"
+          name="checkout"
           class="mt-1 p-2 border border-gray-300 rounded w-full custom-placeholder"
-          placeholder="Select date"
         />
       </form>
 
       <form class="mt-4">
-        <label for="checkin" class="block text-gray-700 text-base">Guest:</label>
+        <label for="guests" class="block text-gray-700 text-sm">Guests:</label>
         <input
           type="number"
-          id="checkin"
-          name="checkin"
+          id="guests"
+          name="guests"
           class="mt-1 p-2 border border-gray-300 rounded w-32 custom-placeholder"
-          placeholder="Select date"
+          placeholder="Number of guests"
         />
       </form>
 
       <button
-        class="bg-[#2EE4EB] text-white rounded hover:bg-blue-700 w-40 h-10 "
+        class="bg-[#2EE4EB] text-white rounded hover:bg-blue-700 w-40 h-10"
       >
         Search
       </button>
@@ -45,8 +43,8 @@
 </section>
 
 <style>
-    .custom-placeholder::placeholder {
-      color: #888;
-      font-size: 0.875rem; 
-    }
-  </style>
+  .custom-placeholder::placeholder {
+    color: #888; /* Cambia el color del placeholder */
+    font-size: 0.875rem; /* Cambia el tamaño del placeholder */
+  }
+</style>
