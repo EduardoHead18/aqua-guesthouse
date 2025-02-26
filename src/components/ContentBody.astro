@@ -1,3 +1,62 @@
-<div class="">
-  <h1>Hola</h1>
-</div>
+---
+import "@fontsource/nobile";
+import { Image } from "astro:assets";
+import imagePiscina from "../assets/piscina-night.png";
+import imageRoom from "../assets/room.png";
+import Carrusel from "./Carrusel.astro";
+---
+
+<section class="flex flex-col md:px-5 py-14 ">
+  <div class="flex flex-col justify-center md:flex-row mb-12 md:mb-40">
+    <div class="md:w-2/3 md:pr-10">
+      <h1 class="text-4xl">Welcome to Aqua Guesthouse</h1>
+      <h2 class="text-3xl leading-tight opacity-70">
+        Your peaceful place in paradise Simple relaxation.
+      </h2>
+    </div>
+    <div class="md:w-1/3 mt-10">
+      <p>
+        Your dream getaway. Eight fully equipped apartments on a spacious
+        property with views of the pool or garden. Enjoy large rooms with
+        king-size beds, a private patio, and a hammock for two. Relax and
+        experience an unforgettable tropical vacation.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-3  md:flex-row md:justify-center">
+    <a href={imagePiscina.src} target="_blank">
+      <Image
+        class="md:w-[700px] md:h-[552px]"
+        src={imagePiscina}
+        alt="Aqua Guesthouse"
+        width="0"
+        height="0"
+      />
+    </a>
+    <a href={imageRoom.src} target="_blank">
+      <Image
+        class="md:w-[524px] md:h-[393px] md:ml-[-80px] md:mt-[-85px]"
+        src={imageRoom}
+        alt="Aqua Guesthouse"
+        width="0"
+        height="0"
+      />
+    </a>
+  </div>
+
+</section>
+
+<Carrusel />
+
+<style>
+  h1 {
+    font-family: "Nobile", sans-serif;
+  }
+  h2 {
+    font-family: "Nobile", sans-serif;
+  }
+  p {
+    font-family: "Nobile", sans-serif;
+  }
+</style>
